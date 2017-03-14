@@ -1,0 +1,23 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "connect-redis": "^3.2.0",
+    "cookie-session": "^2.0.0-beta.1",
+    "express": "^4.14.1",
+    "express-formidable": "^1.0.0",
+    "express-session": "^1.15.1",
+    "json": "^9.0.6",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.8.2",
+    "pug": "^2.0.0-beta11"
+  }
+}

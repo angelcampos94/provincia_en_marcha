@@ -1,0 +1,14 @@
+extends ../../layout.pug
+block contenido
+    div(class="col-md-6 remove-float center-block big-top-space")
+        h1 Subir un anuncio
+        form(action="/app/imagenes" method="POST" enctype="multipart/form-data")
+            div(class="form-group")
+                label(for="Titulo") Titulo
+                input(type="text" name="title" placeholder="Coloca el titulo del anuncio" id="Titulo" class="form-control")
+            div(class="form-group")
+                label(for="Archivo") Archivo del anuncio
+                input(type="file" name="imagen" id="Archivo")
+            div(class="row top-space")
+                div(class="col-xs-12 col-sm-6")
+                    input(type="submit" class="btn btn-info")

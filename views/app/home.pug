@@ -1,0 +1,8 @@
+extends ../layout.pug
+block contenido
+  for imagen in imagenes
+    div(class="img-container")
+      h1= imagen.title
+      img(src="/public/imagenes/"+imagen._id+"."+imagen.extension, class="img-main")
+      if(typeof imagen.creator != "undefined")
+        p= "Creada por "+imagen.creator.email

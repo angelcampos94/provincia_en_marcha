@@ -1,0 +1,12 @@
+extends ../../layout.pug
+block contenido
+    div(class="container")
+        for Imagen in imagenes
+            .white.border.tr.large-padding
+                .row
+                    .col-md-10
+                        h2= Imagen.title
+                    .col-md-2
+                        a(href="/app/imagenes/"+ Imagen._id +"/edit", class="right-space") Editar
+                        form(action="/app/imagenes/"+ Imagen._id +"?_method=DELETE" class="link" method="POST")
+                          input(type="submit", value="Eliminar")
